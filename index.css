@@ -1,0 +1,43 @@
+#fragment {
+    width:100%;
+}
+
+html { 
+height: -webkit-fill-available;    /* per a dispositius mòbils */
+}
+body {
+display: flex;    /* tipus de display que ofereix més prestacions que block */
+flex-direction: column;    /* els elements es disposen de dalt cap abaix */
+justify-content: space-between;    /* els elements, separats per espais, ocupen tot l'espai disponibles */
+min-height: 100vh;    /* alçària de la pantalla en navegadors d'escriptori */
+min-height: 100svh;    /* per a navegadors on la declaració anterior no és precisa */
+min-height: -webkit-fill-available;    
+margin: 0px;    /* elimina tots els marges del document */
+font-family: sans-serif;    /* un tipus de lletra adient per a llocs web */
+background-color: #FCDEE0;    /* color de fons en format #RRGGBB */
+}
+
+#superior {
+display: flex;
+height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
+justify-content: center;    /* centra els elements en la direcció de disposició */
+align-items: center;    /* centra els elements en la direcció perpendicular a la de disposició */
+font-size: 4vmax;    /* mida d'un 4% respecte l'alçària de la pantalla */
+color: white;    /* color del text */
+background-color: #950E17;    /* color de fons */
+}
+
+.seccio {
+flex: 1;    /* les seccions ocupen tot l'espai disponible */
+display: none;    /* les seccions s'inicien ocultes, excepte la primera */
+}
+#seccio_1 {
+display: flex;    /* única secció que es mostra a l'inici */
+justify-content: center;    /* contingut centrat en la direcció de disposició */
+align-items: center;    /* contingut centrat en la direcció transversal */
+font-size: 4vmax;
+}
+
+#menu {
+height: 8vmax;    /* alçària d'un 8% respecte l'alçària de la pantalla */
+}
